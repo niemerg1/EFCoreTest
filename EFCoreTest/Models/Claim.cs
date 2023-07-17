@@ -6,7 +6,9 @@ namespace EFCoreTest.Models
     public class Claim
     {
         public int Id { get; set; }
+        [Column(TypeName = "DateTime")]
         public DateTime StartDate { get; set; }
+        [Column(TypeName = "DateTime")]
         public DateTime? EndDate { get; set; }
         public int FilerId { get; set; }
         public int AttorneyId { get; set; }
